@@ -1,12 +1,11 @@
 import React from 'react';
 import { FaFacebook,FaLinkedin,FaGithub } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <div className='flex flex-col justify-center items-center space-y-4 h-[100vh]'>
+        <div className='flex flex-col mx-5 mt-10 lg:mt-0 justify-center items-center space-y-4 lg:h-[80vh]'>
             <h2 className=' text-white text-6xl font-bold'>Hi, This is Azharul Raj</h2>
-            <p className='text-gray-100 w-6/12'>I am a frontend web developer. I can provide clean code and pixel perfect design.
+            <p className='text-gray-100 lg:w-6/12'>I am a frontend web developer. I can provide clean code and pixel perfect design.
                 I also make website more & more interactive with web animations.</p>
             <div className="flex gap-5 text-4xl text-gray-300 ">
                 <a href="https://www.facebook.com/profile.php?id=100009026880126" target="_blank"><FaFacebook className='hover:text-white' /></a>

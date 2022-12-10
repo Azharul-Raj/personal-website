@@ -29,11 +29,23 @@ const Projects = () => {
         }
     ]
     return (
-        <div className='grid lg:grid-cols-3 gap-3 place-items-center'>
+        <>
+            <div className="text-center mt-10">
+        <h3 className="text-4xl font-bold text-white">
+          PROJECTS
+        </h3>
+      </div>
+      <div className="flex justify-center items-center">
+        <div className="relative flex py-5 items-center w-9/12 lg:w-[20%]">
+          <div className="flex-grow border-t border-gray-400"></div>
+        </div>
+      </div>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 mx-2 place-items-center lg:mb-10'>
             {
                 data.map(details => <Card key={details.id} details={ details} />)
             }
-        </div>
+            </div>
+            </>
     );
 };
 
