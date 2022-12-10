@@ -1,16 +1,24 @@
 import React from 'react';
 import { FaFacebook,FaLinkedin,FaGithub } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <div className='flex flex-col justify-center items-center h-[100vh]'>
+        <div className='flex flex-col justify-center items-center space-y-4 h-[100vh]'>
             <h2 className=' text-white text-6xl font-bold'>Hi, This is Azharul Raj</h2>
-            <p className='text-gray-100 w-6/12 my-6'>I am a frontend web developer. I can provide clean code and pixel perfect design.
+            <p className='text-gray-100 w-6/12'>I am a frontend web developer. I can provide clean code and pixel perfect design.
                 I also make website more & more interactive with web animations.</p>
             <div className="flex gap-5 text-4xl text-gray-300 ">
-                <FaFacebook className='hover:text-white' />
+                <a href="https://www.facebook.com/profile.php?id=100009026880126" target="_blank"><FaFacebook className='hover:text-white' /></a>
                 <FaLinkedin className='hover:text-white' />
                 <FaGithub className='hover:text-white'/>
+            </div>
+            <div className="">
+            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+  <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+      <a href='../../../public/Resume of Azharul Raj -F.pdf'>Download Resume</a>
+  </span>
+</button>
             </div>
         </div>
     );
