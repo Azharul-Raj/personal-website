@@ -9,8 +9,8 @@ const Hero = () => {
                 I also make website more & more interactive with web animations.</p>
             <div className="flex gap-5 text-4xl text-gray-300 ">
                 <a href="https://www.facebook.com/profile.php?id=100009026880126" target="_blank"><FaFacebook className='hover:text-white' /></a>
-                <FaLinkedin className='hover:text-white' />
-                <FaGithub className='hover:text-white'/>
+                <a href="https://www.linkedin.com/in/azharulraj/" target="_blank"><FaLinkedin className='hover:text-white' /></a>
+                <a href="https://github.com/Azharul-Raj" target="_blank"><FaGithub className='hover:text-white'/></a>
             </div>
             <div className="">
             <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">

@@ -1,18 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Header = () => {
   const nav = (
     <>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="#contact">Contact</Link>
+      </li>
+      <li>
+        <Link to="#projects">Projects</Link>
       </li>
     </>
   );
   return (
     <>
-      <div className="navbar dark:bg-[#070D1B]">
-        <div className="navbar-start">
+      <div className="navbar">
+        <div className="navbar">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -43,6 +46,9 @@ const Header = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{nav}</ul>
+        </div>
+        <div className="">
+          
         </div>
       </div>
     </>

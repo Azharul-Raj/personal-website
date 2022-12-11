@@ -12,10 +12,10 @@ export const routes = createBrowserRouter([
                 path: '/',
                 element:<HomePage/>
             },
-            {
-                path: '/contact',
-                element:<Contact/>
-            }
+            // {
+            //     path: '/contact',
+            //     element:<Contact/>
+            // }
             ]
     }
 ])
