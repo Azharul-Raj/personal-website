@@ -12,7 +12,7 @@ const About = () => {
           <div className="flex-grow border-t border-gray-400"></div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="flex items-center">
           <div className="">
             <img className="px-10 rounded-full" src={my_img} alt="" />

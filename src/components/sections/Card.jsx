@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = ({ details }) => {
-  const { title, image, desc, url } = details;
+  const { title, image,id } = details;
   return (
     <div>
       <div className="overflow-hidden aspect-video bg-gradient-to-br from-green-400 to-blue-600 cursor-pointer rounded-xl relative group">
@@ -11,15 +11,13 @@ const Card = ({ details }) => {
             <div className="transform-gpu  p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
               <div className="font-bold">{title}</div>
 
-              {/* <div className="opacity-100 text-sm ">{desc}</div> */}
               <div className="opacity-100">
-                <a
-                  href={`${url}`}
-                  target="_blank"
+                <Link
+                  to={`/project/${id}`}
                   className="btn btn-sm bg-cyan-600 text-white"
                 >
-                  Visit Website
-                </a>
+                  View Details
+                </Link>
               </div>
             </div>
           </div>
