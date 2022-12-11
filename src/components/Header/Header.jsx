@@ -5,17 +5,23 @@ const Header = () => {
   const nav = (
     <>
       <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
         <Link to="#contact">Contact</Link>
       </li>
       <li>
         <Link to="#projects">Projects</Link>
+      </li>
+      <li>
+        <Link to="/blog">Blog</Link>
       </li>
     </>
   );
   return (
     <>
       <div className="navbar">
-        <div className="navbar">
+        <div className="navbar sticky">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
