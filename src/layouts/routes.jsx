@@ -16,7 +16,7 @@ export const routes = createBrowserRouter([
             {
                 path: '/project/:id',
                 element: <Details />,
-                loader:({params})=>fetch(`http://localhost:3001/project/${params.id}`)
+                loader:({params})=>fetch(`https://personalserver.vercel.app/project/${params.id}`)
             },
             {
                 path: '/blog',

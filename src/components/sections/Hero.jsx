@@ -1,10 +1,17 @@
 import React from 'react';
-import { FaFacebook,FaLinkedin,FaGithub } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import Typewriter from 'react-ts-typewriter';
 
 const Hero = () => {
     return (
         <div className='flex flex-col mx-5 mt-10 lg:mt-0 justify-center items-center space-y-4 lg:h-[80vh]'>
+            <h1><Typewriter
+                text={'HELLO WORLD'}
+                loop={true}
+                delay={1000}
+            /></h1>
             <h2 className=' text-white text-6xl font-bold'>Hi, This is Azharul Raj</h2>
+            
             <p className='text-gray-100 lg:w-6/12'>I am a frontend web developer. I can provide clean code and pixel perfect design.
                 I also make website more & more interactive with web animations.</p>
             <div className="flex gap-5 text-4xl text-gray-300 ">

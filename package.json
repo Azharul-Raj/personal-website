@@ -17,8 +17,8 @@
     "react-particles": "^2.6.0",
     "react-router-dom": "^6.4.5",
     "react-router-hash-link": "^2.4.3",
-    "tsparticles": "^2.6.0",
-    "typewriter-effect": "^2.19.0"
+    "react-ts-typewriter": "^0.1.8-b",
+    "tsparticles": "^2.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
