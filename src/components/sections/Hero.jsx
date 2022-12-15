@@ -5,12 +5,14 @@ import Typewriter from 'react-ts-typewriter';
 const Hero = () => {
     return (
         <div className='flex flex-col mx-5 mt-10 lg:mt-0 justify-center items-center space-y-4 lg:h-[80vh]'>
-            <h1><Typewriter
-                text={'HELLO WORLD'}
+            <h1 className=' text-white text-6xl font-bold'>Hi ,<Typewriter
+                text={' This is Azharul Raj'}
+                speed={100}
                 loop={true}
                 delay={1000}
+                cursor={false}
             /></h1>
-            <h2 className=' text-white text-6xl font-bold'>Hi, This is Azharul Raj</h2>
+            {/* <h2 className=' text-white text-6xl font-bold'>Hi, This is Azharul Raj</h2> */}
             
             <p className='text-gray-100 lg:w-6/12'>I am a frontend web developer. I can provide clean code and pixel perfect design.
                 I also make website more & more interactive with web animations.</p>
